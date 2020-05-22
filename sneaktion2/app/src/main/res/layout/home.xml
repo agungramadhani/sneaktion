@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D0D">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="407dp"
+        android:layout_height="237dp"
+        android:maxHeight="237dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+            <TextView
+                android:id="@+id/tabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="arial"
+                android:text="About"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabout"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/intersection5" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabout"
+                android:layout_alignEnd="@+id/imageView3"
+                android:layout_alignRight="@+id/imageView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/home" />
+
+            <TextView
+                android:id="@+id/tlegit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="107dp"
+                android:layout_marginRight="107dp"
+                android:fontFamily="arial"
+                android:text="Legit Check"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/imageView4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/l1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle19"/>
+                    <TextView
+                        android:id="@+id/l2"
+                        android:layout_marginStart="275dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle19"
+                        android:layout_marginLeft="275dp" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+
+            <ListView
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/horizontal1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
